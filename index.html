@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Voeg de Bootstrap CSS-link toe -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Voeg je eigen CSS-bestand toe -->
+    <link rel="stylesheet" href="rover.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Roverscouts Sas van Gent</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="archief.html">Archief</a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="btn btn-link nav-link dropdown-toggle" type="button" id="planningDropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Planning
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="planningDropdown">
+                            <a class="dropdown-item" href="planning2024.html">Planning 2024</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header mt-5">
+            <h1>Homepagina</h1>
+            <br><br>
+            <h3>Welkom op de vet koele website van de Roverscouts in Sas van Gent.</h3>
+            <br>
+            <p>Op deze website kan je onze planning zien (wordt elk jaar gëupdate).</p>
+            <p>En in het archief kun je wat leuke goofy foto's van ons bekijken.</p>
+        </div>
+    </div>
+
+    <!-- Voeg de Bootstrap JavaScript-link toe (optioneel, alleen nodig als je JavaScript-functies van Bootstrap gebruikt) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown();
+        });
+    </script>
+</body>
+
+</html>

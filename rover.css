@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2{
+    color: #ff7700;
+    margin-top: 20px; 
+}
+
+p {
+    color: #000000;
+    margin-top: 10px; 
+}
+
+.planning, .container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.planning p {
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+.header {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+/* Achtergrondfoto */
+body {
+    background-image: url('achtergrondfoto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Doorzichtige divs */
+.container, .navbar, .planning {
+    background-color: rgba(255, 255, 255, 0.5); /* Hiermee wordt de achtergrondkleur semi-transparant gemaakt */
+}
